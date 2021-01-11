@@ -93,7 +93,7 @@ const GameTemplate = ({ attribute, variant, getFunction }) => {
               data={firstElement}
               score={firstElement && firstElement.name && scores[firstElement.name] && scores[firstElement.name]}
               result={result !== 0 && (result === 1 ? 'win' : 'loss')}
-              setItem={setSecondElement}
+              setItem={setFirstElement}
             />
             <Typography variant="h4" component="h2" margin="10">{resultText}</Typography>
             <CardBox
