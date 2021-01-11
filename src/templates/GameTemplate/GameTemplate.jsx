@@ -91,7 +91,7 @@ const GameTemplate = ({ attribute, variant, getFunction }) => {
             <CardBox
               variant={variant}
               data={firstElement}
-              score={firstElement && firstElement.name && scores[firstElement.name] && scores[firstElement.name]}
+              score={scores[firstElement.name]}
               result={result !== 0 && (result === 1 ? 'win' : 'loss')}
               setItem={setFirstElement}
             />
@@ -99,7 +99,7 @@ const GameTemplate = ({ attribute, variant, getFunction }) => {
             <CardBox
               variant={variant}
               data={secondElement}
-              score={secondElement && secondElement.name && scores[secondElement.name] && scores[secondElement.name]}
+              score={scores[secondElement.name]}
               result={result !== 0 && (result === 2 ? 'win' : 'loss')}
               setItem={setSecondElement}
             />
